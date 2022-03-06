@@ -1,0 +1,151 @@
+
+/* h1 {
+  font-size: 50px;
+} */
+
+body {
+  position:absolute;
+	left: 50%;
+	margin-left: -500px; /*1000の半分*/
+  width: 1000px;
+}
+
+/* .stマーク */
+.stlink {
+  /* アンダーライン消去 */
+  text-decoration:none;
+  font-weight: 600;
+  font-size: 200%;
+}
+
+.brandlist {
+  margin-top: 10px;
+  /* 各ブランドを横並びにする */
+  display: flex;
+  /* margin: 10px 30px 50px 0 ; */
+}
+
+.brandlist p{
+  font-size: 15px;
+}
+
+.brandlist img{
+  margin-top: -15px;
+  width: 100%;
+}
+/*
+.list1 {
+  display: flex;
+}
+
+.list2 {
+  display: flex;
+} */
+
+/* 余白調整 */
+.RAGEBLUE {
+  margin-right: 30px;
+}
+
+.HARE {
+  margin-right: 30px;
+  margin-top: 16px;
+}
+
+.niko img {
+  width: 91%;
+}
+
+.Grobal {
+  margin-right: 30px;
+  margin-top: 15px;
+}
+
+.Lowrys {
+  margin-right: 30px;
+}
+
+.Crip img {
+  width: 91%;
+}
+
+/* 959px以下の場合に適用されるCSS (タブレット対応)*/
+@media screen and (max-width: 959px){
+
+  body {
+    position:absolute;
+    max-width: 960px;
+    margin:0 auto;
+    left: 50%;
+    margin-left: -325px;
+    width: 90%;
+  }
+
+  .brandlist {
+    margin-top: 15px;
+    /* 各ブランドを縦並びにする */
+    /* display: flex; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 95%;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .list2 {
+    margin-top: 130px;
+  }
+
+  .list3 {
+    /* margin-top: 40px; */
+    margin-top: 130px;
+    margin: 50px 0 50px 0;
+  }
+
+  .niko img {
+    width: 95.5%;
+  }
+
+  .Crip img {
+    width: 95%;
+  }
+
+}
+
+/* 480px以下の場合に適用されるCSS (スマートフォンに対応)*/
+@media screen and (max-width: 480px){
+
+  body {
+    margin:0 auto;
+    position:absolute;
+    max-width: 480px;
+    left: 47%;
+    margin-left: -160px;
+    width: 90%;
+  }
+
+  .brandlist {
+    margin-top: 5px;
+    /* 各ブランドを縦並びにする */
+    display: flex;
+    /* flex-direction: column; */
+    width: 100%;
+  }
+
+  .list2 {
+    margin-top: -15px;
+  }
+
+  .list3 {
+    margin: -15px 0 10px 0;
+  }
+
+  .niko img {
+    width: 91%;
+  }
+
+  .Crip img {
+    width: 91%;
+  }
+
+}
